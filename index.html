@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceZ Galaxy</title>
+    <link rel="stylesheet" href="spacez.css">
+    <link rel="stylesheet" media= "screen and (max-width: 1345px)" href="spacez.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="showcase ">
+    <nav id="navbar">
+        <div id="lg">
+            <img src="launch.png" alt="SpaceZGalaxy">
+        </div>
+        <div class="toggle "></div>
+        <ul>
+            <li id="item"><a href="#">HOME</a></li>
+            <li id="item"><a href="#">SERVICES</a></li>
+            <li id="item"><a href="#">ABOUT US</a></li>
+            <li id="item"><a href="#">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <div class="menu">
+        <ul>
+            <li id="item"><a href="#">HOME</a></li>
+            <li id="item"><a href="#">SERVICES</a></li>
+            <li id="item"><a href="#">ABOUT US</a></li>
+            <li id="item"><a href="#">CONTACT US</a></li>
+        </ul>
+    </div>
+    <section id="home">
+      <!-- <div>
+        <img src="./satellite.png" alt="">
+      </div> -->
+      <img src="./satellite.png" alt="">
+        <h1 class="h-primary">
+            Welcome to <span>SpaceZ Galaxy</span></h1>
+        <p>SpaceZ Technologies Corp. is an American aerospace manufacturer,
+        </p>
+        <p> space transportation services and communications company headquartered in Hawthorne, California. </p> <p>was co-founded in 2018 by Prashant kumar and Rohan Nonia with the goal of reducing space transportation </p> <p>costs to enable the colonization of Mars.
+            
+        </p>
+        <video src="spaceZ.mp4" muted loop autoplay>
+            
+        </video>
+        <button class="btn">TRY NOW</button>
+        
+        <div class="overlay"></div>
+    </section>
+</section>
+<section class="cardcontainer">
+ <section class="card" data-aos="fade-left">
+  <img src="./satellitecard.jpg" alt="">
+  <div>
+  <h3>SpaceZ Satellite</h3>
+  <p>spaceZ's satellite internet proposal was announced in January 2015. Though it wasn't given a name at the time, CEO Elon Musk said that the company had filed documents with international regulators to place about 4,000 satellites in low Earth orbit.
+    "We're really talking about something which is, in the long term, like rebuilding the internet in space," Musk said during a speech in Seattle when revealing the project. (Musk also owns electric car company Tesla, but Tesla does not produce satellites.)   Musk's initial estimate of the number of satellites soon grew, as he hoped to capture a part of the estimated $1 trillion worldwide internet connectivity market to help achieve his Mars colonization vision. 
+  </p>
+  <a href="#" class="cardbtn">Learn More</a>
+  </div>
+ </section>
+ <section class="card"  data-aos="fade-right">
+  <img src="./mars-67522_1920.jpg" alt="">
+  <div>
+  <h3>SpaceZ Mars Rover</h3>
+  <p> The program includes fully reusable launch vehicles, human-rated spacecraft, on-orbit propellant tankers, rapid-turnaround launch/landing mounts, and local production of rocket fuel on Mars via in situ resource utilization (ISRU). At the Axel Springer Award 2020 Elon Musk said that he is highly confident that the first crewed flights to Mars will happen in 2026.SpaceX intends to concentrate its resources on the transportation part of the Mars colonization project, including the design of a propellant plant based on the Sabatier process that will be deployed on Mars to synthesize methane and liquid oxygen as rocket propellants from the local supply of atmospheric carbon dioxide and ground-accessible water ice. 
+  </p>
+  <a href="#" class="cardbtn">Learn More</a>
+  </div>
+ </section>
+ <section class="card"  data-aos="fade-left">
+  <img src="./SpaceX Dragon Aircraft.jpg" alt="">
+  <div>
+  <h3>The Dragon Spacecraft</h3>
+  <p>he Dragon spacecraft is capable of carrying up to 7 passengers to and from Earth orbit, and beyond. It is the only spacecraft currently flying that is capable of returning significant amounts of cargo to Earth, and is the first private spacecraft to take humans to the space station. In 2020, SpaceX returned America’s ability to fly NASA astronauts to and from the International Space Station on American vehicles for the first time since 2011. In addition to flying astronauts to space for NASA, SpaceX’s Dragon spacecraft can also carry commercial astronauts to Earth orbit, the ISS or beyond.
+  </p>
+  <a href="#" class="cardbtn">Learn More</a>
+  </div>
+ </section>
+</section>
+
+
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div id="clients-item">
+                <img src="./Apple-Logo-Png-Download-828x1024.png" alt="">
+            </div>
+            <div id="clients-item">
+                <img src="./microsoft-centered-logo-png-transparent.png" alt="">
+            </div>
+            <div id="clients-item">
+                <img src="./skype logo.png" alt="">
+            </div>
+            <div id="clients-item">
+                <img src="./hp-logo-1.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone Number</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            copyright &copy; www.SpaceZGalaxy.com. All right reserved
+        </div>
+    </footer>
+    <SCript>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+        menuToggle.addEventListener('click',()=>{
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        })
+    </SCript>
+</body>
+</html>

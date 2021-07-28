@@ -1,0 +1,321 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0%;
+    position: sticky;
+    z-index: 1;
+    /* font-family: 'Fjalla One', sans-serif; */
+}
+#lg{
+    margin: 10px 18px;
+    
+}
+#lg img{
+    width: 52px;
+    height: 52px;
+    margin: -20px 5px;
+    z-index: -1;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: .3; 
+}
+ #navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    
+    /* padding: 12px 40px; */
+}
+ #navbar ul li a{
+     color: rgb(255, 255, 255);
+     display: block;
+    padding: 12px 30px;
+    border-radius: 10px;
+   text-decoration: none;
+   
+}
+ #navbar ul li a:hover{
+     color: rgb(0, 0, 0);
+     background-color: rgb(231, 231, 231);
+      opacity: 1; 
+      transform: translate3d(0px, 5px, 0px);
+      transition: .6s;      
+}
+.toggle{
+    position: relative;
+    width: 69px;
+    height: 60px;
+    
+    background: url('./drop-down-menu.png');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    left: 88%;
+}
+.toggle.active{
+    background: url('./close2.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: -8px 210px;
+    height: 530px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fjalla One', sans-serif;
+}
+#home video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+#home img{
+    top: 12%;
+    width: 102px;
+    height: 97px;
+    margin: 0px 43px;
+    z-index: 10;
+    opacity: 3255;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #bef8ff;
+    mix-blend-mode: overlay;
+}
+#home h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 4rem;
+    z-index: 1;
+}
+#home h1 span{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 4rem;
+    z-index: 1;
+}
+#home p{
+    text-align: center;
+    font-size: 2rem;
+    z-index: 1;
+    
+}
+.showcase{
+    position:relative;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    transition: 0.8s;
+}
+.showcase.active{
+    right: 300px;
+}
+.menu{
+    position: absolute;
+    top: 23%;
+    left: 105%;
+    width: 235px;
+    height: 638px;
+    align-items: center;
+    justify-content: center;
+}
+.menu ul {
+    position: relative;
+    list-style: none;
+    font-size: 25PX;
+   
+}
+.menu ul li a {
+    text-decoration:none;
+    color: black;
+}
+.menu ul li a:hover{
+    text-decoration:underline;
+    color: rgb(74, 68, 255);
+}
+.cardcontainer{
+    max-width: 1000px;
+    margin: 1px 258px;
+    padding: 0 0rem;
+    /* overflow:auto; */
+    
+}
+.cardcontainer img{
+   width: 100%;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: auto;
+}
+.cardcontainer h3{
+    font-size: 40px;
+}
+.cardcontainer p{
+    font-size: 20px;
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background: rgb(243, 243, 243);
+    grid-gap: 1rem;
+    margin: 26px -248px;
+}
+
+.card img{
+    height: 100%;
+}
+.h-primary{
+    font-size: 3.8rem;
+    padding: 11px;
+    margin: 39px;
+}
+.btn{
+    padding: 7px 23px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    margin: 40px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 1;
+    transition: .3s;
+    letter-spacing: 2px;
+}
+.btn:hover{
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 8px;
+    visibility:inherit; 
+    opacity: 1; 
+    /* transform: translate3d(0px, 10px, 0px);
+    transition: .8s; */
+    opacity: 1;
+    
+}
+.center{
+    text-align: center;
+    margin: 2px;
+}
+.h-primary center{
+    font-size: 71px;   
+}
+.h-secondary {
+    font-size: 2.5rem;
+    padding: 23px; 
+}
+#services{
+    margin: 67px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    width: 540px;
+    height: 370px;
+    padding: 23px;
+    margin: -13px 23px;
+    border-radius: 29px;
+    background-color: #dcdcdc3b;
+}
+#services .box img{
+   height: 200px;
+ display: block;
+ margin: auto;
+}
+.services-container{
+    margin: -4px;
+}
+#services{}
+#client-section{
+height: 477px; 
+position: relative;
+}
+#client-section::before{
+content: "";
+position: absolute;
+background: url("../img/Gazpacho-1920x1080.jpg");
+width: 100%;
+height: 456px;
+z-index: -1;
+opacity: .3;
+}
+#clients img{
+    height: 180px;
+}
+#clients-item{
+    padding: 37px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .4;
+    background: url("../img/business-idea.jpg");
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 1px 34px;
+}
+#contact-box 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.8rem;
+    font-family: 'Fjalla One', sans-serif;
+}
+#contact-box input,
+#contact-box textarea{
+width: 91%;
+padding: 1rem;
+font-size: 1.2rem;
+border-radius: 10px;
+font-family: 'Fjalla One', sans-serif;
+}
